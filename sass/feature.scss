@@ -1,0 +1,135 @@
+.feature {
+
+  padding: 40px 10% 40px;
+  color: #fff;
+  font-family: "PTSans", Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: $color-primary;
+  position: relative;
+
+  &--with-top-line {
+    padding-top: 75px;
+  }
+
+  &--with-top-line::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 37px;
+    width: 100%;
+    max-width: 100%;
+    background: url("../img/feature-top-line.png") no-repeat center top;
+    background-size: 100% 100%;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+
+  &__number {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
+
+  &__content {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  &--icon {
+    position: relative;
+    color: #000;
+    background-color: #fff;
+    padding: 0 70px 35px 70px;
+  }
+
+  &--icon:last-child {
+    padding-bottom: 0;
+  }
+
+  &--icon > &__title {
+    text-align: left;
+  }
+
+  &--icon > &__content {
+    text-align: left;
+  }
+
+  &--icon-house::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    // Не получается его красиво привязать при резине
+    left: 10px;
+    display: block;
+    width: 37px;
+    height: 37px;
+    background: url("../img/icon-house.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--icon-gift::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    // Не получается его красиво привязать при резине
+    left: 14px;
+    display: block;
+    width: 32px;
+    height: 38px;
+    background: url("../img/icon-gift.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--icon-burger::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    // Не получается его красиво привязать при резине
+    left: 12px;
+    display: block;
+    width: 37px;
+    height: 35px;
+    background: url("../img/icon-burger.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--gray {
+    position: relative;
+    background-color: #eee;
+    color: #000;
+  }
+
+  &--gray::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 87.5%;
+    bottom: 0;
+    left: 6.25%;
+    right: 6.25%;
+    background-color: #d6d6d6;
+  }
+
+  &--gray:last-child::after {
+    content: none;
+  }
+}
