@@ -1,0 +1,26 @@
+.text-intro {
+  padding: 35px 10% 5px;
+  font-family: "PTSans", Arial, sans-serif;
+  text-transform: uppercase;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+  }
+}

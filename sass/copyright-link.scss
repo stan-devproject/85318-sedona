@@ -1,0 +1,19 @@
+.copyright-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  // Не получается управлять его размером...
+  // Почему высота ограничивается высотой строки?
+  // Как лучше изменить цвет?
+  &__logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    width: 27px;
+    background: url("../img/htmlacademy.svg") no-repeat;
+  }
+}

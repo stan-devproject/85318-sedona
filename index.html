@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
@@ -24,19 +25,21 @@
             <a class="navigation__link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
-        <a class="logo" href="index.html">
-          <img class="logo__item" src="img/logo.png" width="138" height="70" alt="Седона">
-        </a>
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__image" src="img/logo.png" width="138" height="70" alt="Седона">
+          </a>
+        </div>
       </nav>
       <div class="promo">
-        <div class="promo__block-top">
-          <img class="promo__image" src="img/promo-top.png" width="256" height="86" alt="">
+        <div class="promo__block  promo__block--top">
+          <img class="promo__image" src="img/promo-top.png" width="196" height="66" alt="Welcome to the gorgeous">
         </div>
-        <div class="promo__block-middle">
-          <img class="promo__image" src="img/promo-middle.png" width="458" height="78" alt="">
+        <div class="promo__block  promo__block--middle">
+          <img class="promo__image" src="img/promo-middle.png" width="280" height="48" alt="Sedona">
         </div>
-        <div class="promo__block-bottom">
-          <img class="promo__label" src="img/promo-bottom.png" width="296" height="80" alt="">
+        <div class="promo__block  promo__block--bottom">
+          <img class="promo__image" src="img/promo-bottom.png" width="197" height="54" alt="Because the Grand Canyon sucks!">
         </div>
       </div>
     </header>
@@ -45,54 +48,54 @@
       <p class="text-intro__content">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
     </div>
     <section class="features-row  features-row--with-image  clearfix">
-      <div class="feature">
+      <div class="feature  feature--with-top-line">
         <h2 class="feature__title">Настоящий городок</h2>
-        <div class="feature__number">&mdash; №1 &mdash;</div>
-        <div class="feature__content">Седона не атракцион для туристов, там течет своя жизнь</div>
+        <p class="feature__number">&mdash; №1 &mdash;</p>
+        <p class="feature__content">Седона не атракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="features-row__container">
-        <img class="features-row__image" src="img/feature-image-1.jpg" alt="" width="800" height="256">
+        <img class="features-row__image" src="img/feature-image-1.jpg" alt="" width="320" height="256">
       </div>
     </section>
-    <div class="features-row  clearfix">
+    <div class="features-row  features-row--icon-row  clearfix">
       <div class="feature  feature--icon  feature--icon-house">
         <h2 class="feature__title">Жилье</h2>
-        <div class="feature__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+        <p class="feature__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
       <div class="feature  feature--icon  feature--icon-gift">
         <h2 class="feature__title">Сувениры</h2>
-        <div class="feature__content">Не только китайского, но и местного производства!</div>
+        <p class="feature__content">Не только китайского, но и местного производства!</p>
       </div>
       <div class="feature  feature--icon  feature--icon-burger">
         <h2 class="feature__title">Еда</h2>
-        <div class="feature__content">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
+        <p class="feature__content">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
       </div>
     </div>
     <section class="features-row  features-row--with-image  clearfix">
       <div class="feature">
         <h2 class="feature__title">Там есть мост дьявола</h2>
-        <div class="feature__number">&mdash; №2 &mdash;</div>
-        <div class="feature__content">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+        <p class="feature__number">&mdash; №2 &mdash;</p>
+        <p class="feature__content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
       <div class="features-row__container">
         <img class="features-row__image" src="img/feature-image-2.jpg" alt="" width="800" height="256">
       </div>
     </section>
-    <section class="features-row  features-row--gray  clearfix">
-      <div class="feature">
+    <section class="features-row  clearfix">
+      <div class="feature  feature--gray">
         <h2 class="feature__title">Небольшая площадь</h2>
-        <div class="feature__number">&mdash; №3 &mdash;</div>
-        <div class="feature__content">Все достопримечательности находятся очень близко</div>
+        <p class="feature__number">&mdash; №3 &mdash;</p>
+        <p class="feature__content">Все достопримечательности находятся очень близко</p>
       </div>
-      <div class="feature">
+      <div class="feature  feature--gray">
         <h2 class="feature__title">Красивая дорога</h2>
-        <div class="feature__number">&mdash; №4 &mdash;</div>
-        <div class="feature__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+        <p class="feature__number">&mdash; №4 &mdash;</p>
+        <p class="feature__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
-      <div class="feature">
+      <div class="feature  feature--gray">
         <h2 class="feature__title">Мало туристов</h2>
-        <div class="feature__number">&mdash; №5 &mdash;</div>
-        <div class="feature__content">Большинство едет в гранд каньон и толпится там</div>
+        <p class="feature__number">&mdash; №5 &mdash;</p>
+        <p class="feature__content">Большинство едет в гранд каньон и толпится там</p>
       </div>
     </section>
     <section class="search">
@@ -105,10 +108,10 @@
       </div>
     </section>
     <div class="map">
-      <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d705462.4803377569!2d-111.73208807180848!3d34.777923303447494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1442747958706" width="1200" height="593" allowfullscreen></iframe>
+      <div class="map__canvas"></div>
       <footer class="footer-main footer-main--attached  clearfix">
         <div class="footer-main__column">
-          <h2 class="footer-hash">#visitsedona</h2>
+          <h2 class="footer-main__hash">#visitsedona</h2>
         </div>
         <div class="footer-main__column">
           <div class="social">
@@ -125,5 +128,6 @@
       </footer>
     </div>
   </div>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
