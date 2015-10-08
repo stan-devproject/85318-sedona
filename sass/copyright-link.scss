@@ -12,8 +12,11 @@
   &__logo {
     display: inline-block;
     vertical-align: middle;
-    font-size: 0;
-    width: 27px;
-    background: url("../img/htmlacademy.svg") no-repeat;
+
+    svg {
+      width: 27px * 1.5;
+      height: 34px * 1.5;
+    }
+
   }
 }
