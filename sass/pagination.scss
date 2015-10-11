@@ -1,0 +1,44 @@
+.pagination {
+  margin: 0;
+  padding: 0;
+  padding: 40px 6.25% 24px;
+
+  list-style: none;
+  font-size: 0;
+  line-height: 0;
+
+  border-top: 2px solid #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+  &__item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 58px;
+    height: 58px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 58px;
+    vertical-align: top;
+    text-align: center;
+    text-transform: uppercase;
+    // Как правильно делать, если размер меняется?
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &--active {
+      background-color: #e5e5e5;
+    }
+  }
+  &__link {
+    display: block;
+    width: 58px;
+    height: 58px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    background-color: #81b3d2;
+  }
+}

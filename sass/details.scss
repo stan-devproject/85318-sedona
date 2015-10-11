@@ -1,0 +1,41 @@
+.details {
+  font-size: 0;
+  line-height: 0;
+  &__tag {
+    position: relative;
+
+    display: inline-block;
+    margin-right: 30px;
+    padding-left: 17px;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #999999;
+    text-transform: uppercase;
+    font-style: italic;
+    &--date::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+
+      display: block;
+      width: 11px;
+      height: 11px;
+
+      background: url("../img/icon-calendar.png") no-repeat;
+    }
+    &--category::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+
+      display: block;
+      width: 11px;
+      height: 9px;
+
+      background: url("../img/icon-tag.png") no-repeat;
+    }
+  }
+}

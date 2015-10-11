@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,10 +25,12 @@
             <a class="navigation__link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
+        <button class="navigation__close"></button>
         <div class="logo">
           <a class="logo__link" href="index.html">
             <img class="logo__image" src="img/logo.png" width="138" height="70" alt="Седона">
           </a>
+          <button class="navigation__open"><i class="navigation__open-icon"></i></button>
         </div>
       </nav>
       <div class="promo">
@@ -98,18 +100,16 @@
         <p class="feature__content">Большинство едет в гранд каньон и толпится там</p>
       </div>
     </section>
-    <section class="search">
-      <div class="text-intro">
-        <div class="text-intro__title">Заинтересовались?</div>
-        <p class="text-intro__content">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </div>
-      <div class="search__button">
+    <div class="text-intro">
+      <div class="text-intro__title">Заинтересовались?</div>
+      <p class="text-intro__content">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <div class="text-intro__container">
         <a class="button" href="search.html">Найти гостиницу</a>
       </div>
-    </section>
+    </div>
     <div class="map">
       <div class="map__canvas"></div>
-      <footer class="footer-main footer-main--attached  clearfix">
+      <footer class="footer-main  footer-main--attached  clearfix">
         <div class="footer-main__column">
           <h2 class="footer-main__hash">#visitsedona</h2>
         </div>

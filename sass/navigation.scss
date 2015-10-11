@@ -1,17 +1,5 @@
 .navigation {
-  // Для позиционирования иконки меню
   position: relative;
-
-  // Знак иконки меню
-  &::after {
-    content: '';
-    width: 23px;
-    height: 22px;
-    position: absolute;
-    right: 20px;
-    bottom: 17px;
-    background-image: url("../img/icon-menu.png");
-  }
 
   &__list {
     list-style: none;
@@ -23,7 +11,7 @@
     box-sizing: border-box;
     min-height: 54px;
 
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 23px;
@@ -35,28 +23,21 @@
     margin-bottom: 1px;
     box-shadow: 0 1px 0 #678fa8,
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  }
 
-  &__item:first-child {
-    box-shadow: 0 1px 0 #678fa8;
-    position: relative;
-  }
+    &:first-child {
+      box-shadow: 0 1px 0 #678fa8;
+      position: relative;
+    }
 
-  &__item:first-child::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 23px;
-    height: 22px;
-    right: 20px;
-    top: 17px;
-    background: url("../img/icon-close.png");
-  }
+    &:hover {
+      background-color: #669ec0;
+    }
 
-  &__item:last-child {
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
-                inset 0 -4px 5px #6d97b1;
-    margin-bottom: 0;
+    &:last-child {
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                  inset 0 -4px 5px #6d97b1;
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -65,6 +46,79 @@
     text-decoration: none;
     color: #fff;
     padding: round((55px-23px)/2) 0;
+  }
+
+  &__close {
+    display: block;
+    outline: none;
+    border: none;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 20px;
+    top: 10px;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 5px;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__open {
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 22px;
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    &-icon {
+      display: block;
+      position: absolute;
+      width: 23px;
+      height: 4px;
+      background-color: #81b3d2;
+      top: 0;
+      left: 0;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 4px;
+      background-color: #81b3d2;
+      top: 9px;
+      left: 0;
+    }
+
+    &::after {
+      top: 18px;
+    }
   }
 
 }

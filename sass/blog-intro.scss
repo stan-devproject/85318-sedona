@@ -1,19 +1,15 @@
-.text-intro {
-  padding: 35px 6.25% 5px;
+.blog-intro {
+  padding: 40px 6.25% 25px;
 
   font-family: "PT Sans", Arial, sans-serif;
-  text-align: center;
   text-transform: uppercase;
-  &--pb15 {
-    padding-bottom: 15px;
-  }
   &__title {
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
 
     font-weight: 700;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 26px;
     text-align: center;
     color: #000000;
@@ -24,12 +20,12 @@
 
     font-weight: 400;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 24px;
     text-align: center;
     color: #333333;
   }
-  &__container {
+  // Можно ли так делать?
+  &__content + .details {
     margin-top: 20px;
-    margin-bottom: 30px;
   }
 }
