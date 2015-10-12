@@ -14,4 +14,10 @@
       height: 34px * 1.5;
     }
   }
+  &:hover &__logo-svg {
+      fill: #81b3d2;
+  }
+  &:active &__logo-svg {
+      fill: #b2b2b2;
+  }
 }

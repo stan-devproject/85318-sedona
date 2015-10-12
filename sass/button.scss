@@ -18,6 +18,14 @@
   background-color: $color-primary;
   border: none;
   outline: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
   &--gray {
     padding-right: 5px;
     padding-left: 5px;
@@ -26,5 +34,13 @@
 
     background-color: #f2f2f2;
     opacity: 0.3;
+  }
+  &--gray:hover {
+    background-color: #e5e5e5;
+    color: #7a7a7a;
+  }
+  &--gray:active {
+    background-color: #d5d5d5;
+    color: #a4a4a4;
   }
 }

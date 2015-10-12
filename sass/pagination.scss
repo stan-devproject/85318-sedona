@@ -40,5 +40,12 @@
     text-decoration: none;
 
     background-color: #81b3d2;
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+      color: #88b6d1;
+    }
   }
 }

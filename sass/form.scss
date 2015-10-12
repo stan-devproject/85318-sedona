@@ -29,9 +29,6 @@
     color: #333333;
     text-transform: uppercase;
   }
-  &__input-text::placeholder {
-    color: #000000;
-  }
   &__input-radio {
     display: none;
   }
@@ -61,6 +58,14 @@
     border: 5px solid #f2f2f2;
     border-radius: 50%;
   }
+  &__input-radio + &__label:hover::before {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+  &__input-radio + &__label:active::before {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
   &__input-radio:checked + &__label::after {
     content: "";
     position: absolute;
@@ -75,6 +80,10 @@
     background-color: #333333;
     border: 3px solid #333333;
     border-radius: 50%;
+  }
+  &__input-radio + &__label:active::after {
+    background-color: #a4a4a4;
+    border-color: #a4a4a4;
   }
   &__star-symbol {
     color: red;
@@ -96,6 +105,17 @@
     background-color: #f2f2f2;
     border: none;
     outline: none;
+    &::placeholder {
+      color: #000000;
+    }
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:focus {
+      background-color: #fff;
+      border: 4px solid #e5e5e5;
+      padding-left: 18px;
+    }
   }
   &__count-block {
     font-size: 0;
@@ -113,31 +133,41 @@
     background-color: #f2f2f2;
     border: none;
     outline: none;
-  }
-  &__input-numerator--minus::before,
-  &__input-numerator--plus::before,
-  &__input-numerator--plus::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:active {
+      background-color: #d5d5d5;
+    }
+    &--minus {
+      margin-right: 6px;
+    }
+    &--minus::before,
+    &--plus::before,
+    &--plus::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
 
-    display: block;
-    width: 20px;
-    height: 4px;
-    margin: auto;
+      display: block;
+      width: 20px;
+      height: 4px;
+      margin: auto;
 
-    background-color: #b8b8b8;
-    border-radius: 20px;
-  }
-  &__input-numerator--plus::after {
-    width: 4px;
-    height: 20px;
-  }
-  &__input-numerator--minus {
-    margin-right: 6px;
+      background-color: #b8b8b8;
+      border-radius: 20px;
+    }
+    &--plus::after {
+      width: 4px;
+      height: 20px;
+    }
+    &:active::before,
+    &:active::after {
+      background-color: #c4c4c4;
+    }
   }
   &__input-description {
     position: relative;
@@ -255,6 +285,14 @@
     border: 5px solid #f2f2f2;
     border-radius: 5px;
   }
+  &__input-checkbox + &__label:hover::before {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+  &__input-checkbox + &__label:active::before {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
   &__input-checkbox:checked + &__label::after {
     content: "";
     position: absolute;
@@ -270,6 +308,9 @@
     border-top-style: none;
     border-right-style: none;
     transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &__input-checkbox:checked + &__label:active::after {
+    border-color: #a4a4a4;
   }
   &__preview-list {
     padding-top: 55px;
@@ -323,6 +364,20 @@
     }
     &::after {
       transform: rotate(-45deg);
+    }
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:hover::before,
+    &:hover::after {
+      background-color: #8b8b8b;
+    }
+    &:active {
+      background-color: #d5d5d5;
+    }
+    &:active::before,
+    &:active::after {
+      background-color: #c4c4c4;
     }
   }
 }

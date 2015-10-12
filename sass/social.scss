@@ -11,6 +11,15 @@
     font-size: 0;
 
     background-color: $color-primary;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+    }
     &--twitter::before {
       content: "";
       position: absolute;
@@ -23,6 +32,9 @@
 
       background: url("../img/social-twitter.png") no-repeat;
       transform: translate(-50%, -50%);
+    }
+    &--twitter:active::before {
+      opacity: 0.3;
     }
     &--facebook::before {
       content: "";
@@ -37,6 +49,9 @@
       background: url("../img/social-facebook.png") no-repeat;
       transform: translate(-50%, -50%);
     }
+    &--facebook:active::before {
+      opacity: 0.3;
+    }
     &--youtube::before {
       content: "";
       position: absolute;
@@ -50,8 +65,8 @@
       background: url("../img/social-youtube.png") no-repeat;
       transform: translate(-50%, -50%);
     }
-  }
-  &__link:last-child {
-    margin-right: 0;
+    &--youtube:active::before {
+      opacity: 0.3;
+    }
   }
 }

@@ -31,5 +31,17 @@
       width: 130px;
       float: right;
     }
+
+    &:hover {
+      background-color: #669ec0;
+      border-color: #669ec0;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      border-color: #5496bd;
+      color: #88b6d1;
+    }
   }
 }
