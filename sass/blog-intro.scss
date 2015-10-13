@@ -24,8 +24,4 @@
     text-align: center;
     color: #333333;
   }
-  // Можно ли так делать?
-  &__content + .details {
-    margin-top: 20px;
-  }
 }

@@ -1,6 +1,15 @@
 .details {
   font-size: 0;
   line-height: 0;
+  &--tac {
+    text-align: center;
+  }
+  &--mt20 {
+    margin-top: 20px;
+  }
+  &--ml15 {
+    margin-left: 15px;
+  }
   &__tag {
     position: relative;
 

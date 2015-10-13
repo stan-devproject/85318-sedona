@@ -17,6 +17,9 @@
   }
   &__input-block {
     position: relative;
+    &--mb40 {
+      margin-bottom: 40px;
+    }
   }
   &__label {
     display: block;
@@ -123,7 +126,7 @@
   &__input-numerator {
     position: relative;
 
-    display: inline-block;
+    
     box-sizing: border-box;
     width: 61px;
     height: 58px;
@@ -140,7 +143,11 @@
       background-color: #d5d5d5;
     }
     &--minus {
+      float: left;
       margin-right: 6px;
+    }
+    &--plus {
+      float: right;
     }
     &--minus::before,
     &--plus::before,
@@ -172,11 +179,11 @@
   &__input-description {
     position: relative;
 
-    display: inline-block;
     box-sizing: border-box;
-    width: 145px;
+    margin-left: 67px;
+    margin-right: 67px;
+    
     height: 58px;
-    margin-right: 6px;
     // Почему у инпута выпадает снизу маргин?
     margin-bottom: 12px;
 
@@ -222,12 +229,9 @@
   &__input-left-column {
     float: left;
     width: 61px;
-    margin-top: 20px;
   }
   &__input-right-column {
-    float: right;
-    width: 213px;
-    margin-top: 20px;
+    margin-left: 67px;
   }
   &__number-title {
     margin-bottom: 5px;
@@ -313,6 +317,10 @@
     border-color: #a4a4a4;
   }
   &__preview-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     padding-top: 55px;
     padding-bottom: 2px;
 
@@ -320,14 +328,11 @@
     line-height: 0;
   }
   &__preview-item {
+    flex: 0 0 70px;
     position: relative;
 
-    display: inline-block;
-    margin-right: 35px;
+   // margin-right: 35px;
     margin-bottom: 35px;
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
   }
   &__preview-image {
     display: block;

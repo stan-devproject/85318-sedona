@@ -1,4 +1,6 @@
 .pagination {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding: 40px 6.25% 24px;
@@ -10,7 +12,6 @@
   border-top: 2px solid #dbdbdb;
   border-bottom: 2px solid #dbdbdb;
   &__item {
-    display: inline-block;
     box-sizing: border-box;
     width: 58px;
     height: 58px;
@@ -23,10 +24,6 @@
     vertical-align: top;
     text-align: center;
     text-transform: uppercase;
-    // Как правильно делать, если размер меняется?
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
     &--active {
       background-color: #e5e5e5;
     }
