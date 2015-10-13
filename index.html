@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,13 +22,15 @@
             <a class="navigation__link" href="#">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="hotels.html">Гостиницы</a>
+            <a class="navigation__link" href="#">Гостиницы</a>
           </li>
         </ul>
+        <button class="navigation__close"></button>
         <div class="logo">
           <a class="logo__link" href="index.html">
             <img class="logo__image" src="img/logo.png" width="138" height="70" alt="Седона">
           </a>
+          <button class="navigation__open"><i class="navigation__open-icon"></i></button>
         </div>
       </nav>
       <div class="promo">
@@ -98,18 +100,16 @@
         <p class="feature__content">Большинство едет в гранд каньон и толпится там</p>
       </div>
     </section>
-    <section class="search">
-      <div class="text-intro">
-        <div class="text-intro__title">Заинтересовались?</div>
-        <p class="text-intro__content">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </div>
-      <div class="search__button">
+    <div class="text-intro">
+      <div class="text-intro__title">Заинтересовались?</div>
+      <p class="text-intro__content">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <div class="text-intro__container">
         <a class="button" href="search.html">Найти гостиницу</a>
       </div>
-    </section>
+    </div>
     <div class="map">
       <div class="map__canvas"></div>
-      <footer class="footer-main footer-main--attached  clearfix">
+      <footer class="footer-main  footer-main--attached  clearfix">
         <div class="footer-main__column">
           <h2 class="footer-main__hash">#visitsedona</h2>
         </div>
@@ -122,7 +122,10 @@
         </div>
         <div class="footer-main__column">
           <a class="copyright-link" href="http://htmlacademy.ru">
-            Разработано <span class="copyright-link__logo">Htmlacademy.ru</span>
+            Разработано
+            <span class="copyright-link__logo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="copyright-link__logo-svg" fill="#000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            </span>
           </a>
         </div>
       </footer>

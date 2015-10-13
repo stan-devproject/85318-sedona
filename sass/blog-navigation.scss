@@ -1,0 +1,47 @@
+.blog-navigation {
+  padding: 45px 6.25%;
+  margin-top: 10px;
+  border-top: 2px solid #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+
+  &__container {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: block;
+    box-sizing: border-box;
+    min-height: 58px;
+    border: 2px solid #81b3d2;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    padding: (round((58px - 26px)/2)) 15px;
+    text-align: center;
+
+    &--back {
+      width: 130px;
+      float: left;
+    }
+
+    &--forward {
+      width: 130px;
+      float: right;
+    }
+
+    &:hover {
+      background-color: #669ec0;
+      border-color: #669ec0;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      border-color: #5496bd;
+      color: #88b6d1;
+    }
+  }
+}

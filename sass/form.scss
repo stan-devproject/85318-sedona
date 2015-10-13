@@ -1,0 +1,388 @@
+.form {
+  &__block {
+    padding: 20px 6.25% 11px;
+
+    border-top: 1px solid #e5e5e5;
+  }
+  &__block-title {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__input-block {
+    position: relative;
+    &--mb40 {
+      margin-bottom: 40px;
+    }
+  }
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 20px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  &__input-radio {
+    display: none;
+  }
+  &__input-radio + &__label {
+    margin-bottom: 17px;
+    padding-left: 78px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 56px;
+    color: #000000;
+    text-transform: none;
+
+    cursor: pointer;
+  }
+  &__input-radio + &__label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 46px;
+    height: 46px;
+
+    background-color: #f2f2f2;
+    border: 5px solid #f2f2f2;
+    border-radius: 50%;
+  }
+  &__input-radio + &__label:hover::before {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+  &__input-radio + &__label:active::before {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
+  &__input-radio:checked + &__label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 17px;
+
+    background-color: #333333;
+    border: 3px solid #333333;
+    border-radius: 50%;
+  }
+  &__input-radio + &__label:active::after {
+    background-color: #a4a4a4;
+    border-color: #a4a4a4;
+  }
+  &__star-symbol {
+    color: red;
+  }
+  &__input-text {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 12px;
+    padding: 16px 22px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #000000;
+
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    &::placeholder {
+      color: #000000;
+    }
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:focus {
+      background-color: #fff;
+      border: 4px solid #e5e5e5;
+      padding-left: 18px;
+    }
+  }
+  &__count-block {
+    font-size: 0;
+  }
+  &__input-numerator {
+    position: relative;
+
+    
+    box-sizing: border-box;
+    width: 61px;
+    height: 58px;
+
+    vertical-align: top;
+
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:active {
+      background-color: #d5d5d5;
+    }
+    &--minus {
+      float: left;
+      margin-right: 6px;
+    }
+    &--plus {
+      float: right;
+    }
+    &--minus::before,
+    &--plus::before,
+    &--plus::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      width: 20px;
+      height: 4px;
+      margin: auto;
+
+      background-color: #b8b8b8;
+      border-radius: 20px;
+    }
+    &--plus::after {
+      width: 4px;
+      height: 20px;
+    }
+    &:active::before,
+    &:active::after {
+      background-color: #c4c4c4;
+    }
+  }
+  &__input-description {
+    position: relative;
+
+    box-sizing: border-box;
+    margin-left: 67px;
+    margin-right: 67px;
+    
+    height: 58px;
+    // Почему у инпута выпадает снизу маргин?
+    margin-bottom: 12px;
+
+    vertical-align: top;
+  }
+  &__input-description &__input-text {
+    padding-right: 50px;
+  }
+  &__input-description-docket {
+    position: absolute;
+    top: 14px;
+    right: 21px;
+
+    display: inline-block;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    vertical-align: top;
+    color: #aeaeae;
+  }
+  &__output {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 12px;
+    padding: 14px 22px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #000000;
+
+    background-color: #f2f2f2;
+    border: none;
+    border: 2px solid #b8b8b8;
+    outline: none;
+  }
+  // Уместно ли здесь в пикселях ширину задавать, или лучше как-то в процентах?
+  // Здесь уникальный отступ сверху, уместно ли делать margin-top в двух колонках, как сверстать это по другому?
+  &__input-left-column {
+    float: left;
+    width: 61px;
+  }
+  &__input-right-column {
+    margin-left: 67px;
+  }
+  &__number-title {
+    margin-bottom: 5px;
+    padding-left: 26px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  &__number-block {
+    box-sizing: border-box;
+    width: 61px;
+    height: 58px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 58px;
+    text-align: center;
+    color: #000000;
+
+    background-color: #f2f2f2;
+  }
+  &__checkbox-block {
+    min-height: 56px;
+    margin-bottom: 24px;
+  }
+  &__input-checkbox {
+    display: none;
+  }
+  &__input-checkbox + &__label {
+    position: relative;
+
+    padding-top: 15px;
+    padding-left: 80px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+
+    cursor: pointer;
+  }
+  &__input-checkbox + &__label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 46px;
+    height: 46px;
+
+    background-color: #f2f2f2;
+    border: 5px solid #f2f2f2;
+    border-radius: 5px;
+  }
+  &__input-checkbox + &__label:hover::before {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+  &__input-checkbox + &__label:active::before {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
+  &__input-checkbox:checked + &__label::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 30px;
+
+    display: block;
+    width: 17px;
+    height: 10px;
+    margin: auto;
+
+    border: 5px solid #000000;
+    border-top-style: none;
+    border-right-style: none;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &__input-checkbox:checked + &__label:active::after {
+    border-color: #a4a4a4;
+  }
+  &__preview-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 55px;
+    padding-bottom: 2px;
+
+    font-size: 0;
+    line-height: 0;
+  }
+  &__preview-item {
+    flex: 0 0 70px;
+    position: relative;
+
+   // margin-right: 35px;
+    margin-bottom: 35px;
+  }
+  &__preview-image {
+    display: block;
+  }
+  &__preview-delete-link {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      width: 15px;
+      height: 2px;
+      margin: auto;
+
+      background-color: #b8b8b8;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:hover::before,
+    &:hover::after {
+      background-color: #8b8b8b;
+    }
+    &:active {
+      background-color: #d5d5d5;
+    }
+    &:active::before,
+    &:active::after {
+      background-color: #c4c4c4;
+    }
+  }
+}
