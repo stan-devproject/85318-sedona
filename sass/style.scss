@@ -1,4 +1,5 @@
 @import "normalize.scss";
+@import "clearfix.scss";
 @import "variables.scss";
 @import "container.scss";
 @import "navigation.scss";
@@ -7,9 +8,14 @@
 @import "text-intro.scss";
 @import "features-row.scss";
 @import "feature.scss";
-@import "search.scss";
 @import "button.scss";
 @import "footer-main.scss";
 @import "map.scss";
 @import "social.scss";
 @import "copyright-link.scss";
+@import "form.scss";
+@import "blog-intro.scss";
+@import "blog-post.scss";
+@import "details.scss";
+@import "pagination.scss";
+@import "blog-navigation.scss";

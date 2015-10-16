@@ -1,18 +1,46 @@
 .button {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  width: 100%;
   box-sizing: border-box;
-  width: 280px;
   min-height: 58px;
-  background-color: $color-primary;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
   padding: 16px;
 
-  font-family: "PTSans", Arial, sans-serif;
-  font-size: 21px;
   font-weight: 700;
+  font-size: 21px;
   line-height: 26px;
+  font-family: "PT Sans", Arial, sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-primary;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
+  &--gray {
+    padding-right: 5px;
+    padding-left: 5px;
+
+    color: #333333;
+
+    background-color: #f2f2f2;
+    opacity: 0.3;
+  }
+  &--gray:hover {
+    background-color: #e5e5e5;
+    color: #7a7a7a;
+  }
+  &--gray:active {
+    background-color: #d5d5d5;
+    color: #a4a4a4;
+  }
 }

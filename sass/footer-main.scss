@@ -1,17 +1,20 @@
 .footer-main {
-  background-color: #fefefe;
-
+  background-color: #ffffff;
+  &--attached {
+    background-color: #fefefe;
+  }
   &__column {
     padding: 0 26% 40px 26%;
+
     text-align: center;
   }
-
   &__hash {
     margin: 0;
     padding: 0;
     padding-top: 36px;
-    font-size: 21px;
+
     font-weight: 700;
+    font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
   }

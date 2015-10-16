@@ -1,22 +1,23 @@
 .copyright-link {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 26px;
-  color: #000;
-  text-decoration: none;
+  color: #000000;
   text-transform: uppercase;
-
-  // Не получается управлять его размером...
-  // Почему высота ограничивается высотой строки?
-  // Как лучше изменить цвет?
+  text-decoration: none;
   &__logo {
     display: inline-block;
-    vertical-align: middle;
 
+    vertical-align: middle;
     svg {
       width: 27px * 1.5;
       height: 34px * 1.5;
     }
-
+  }
+  &:hover &__logo-svg {
+      fill: #81b3d2;
+  }
+  &:active &__logo-svg {
+      fill: #b2b2b2;
   }
 }
