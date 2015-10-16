@@ -317,9 +317,9 @@
     border-color: #a4a4a4;
   }
   &__preview-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    //display: flex;
+    //flex-direction: row;
+    //flex-wrap: wrap;
 
     padding-top: 55px;
     padding-bottom: 2px;
@@ -328,10 +328,11 @@
     line-height: 0;
   }
   &__preview-item {
-    flex: 0 0 70px;
+    display: inline-block;
+    //flex: 0 0 70px;
     position: relative;
-
-   // margin-right: 35px;
+    margin-left: 18px;
+    margin-right: 18px;
     margin-bottom: 35px;
   }
   &__preview-image {
