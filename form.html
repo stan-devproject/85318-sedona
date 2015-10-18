@@ -40,93 +40,107 @@
 
     <form class="form" action="#" method="post">
       <div class="text-intro  text-intro--pb15">
-        <h1 class="text-intro__title">Оставьте свой отзыв</h1>
+        <h1 class="text-intro__title  text-intro__title--mqmin768fs30">Оставьте свой отзыв</h1>
         <p class="text-intro__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
 
       <div class="form__block">
-        <h2 class="form__block-title">Представьтесь, пожалуйста:</h2>
-        <div class="form__input-block">
-          <label class="form__label" for="id-surname">
-            Фамилия:
-            <span class="form__star-symbol">*</span>
-          </label>
-          <input class="form__input-text" id="id-surname" type="text" name="surname" placeholder="Иванов">
+        <div class="form__block-heading">
+          <h2 class="form__block-title">Представьтесь, пожалуйста:</h2>
         </div>
-        <div class="form__input-block">
-          <label class="form__label" for="id-name">
-            Имя:
-            <span class="form__star-symbol">*</span>
-          </label>
-          <input class="form__input-text" id="id-name" type="text" name="name" placeholder="Петр">
-        </div>
-        <div class="form__input-block">
-          <label class="form__label" for="id-patronymic">Отчество:</label>
-          <input class="form__input-text" id="id-patronymic" type="text" name="patronymic" placeholder="Александрович">
-        </div>
-      </div>
-
-      <div class="form__block">
-        <h2 class="form__block-title">Ваше общее впечатление:</h2>
-        <div class="form__input-block">
-          <input class="form__input-radio" id="id-impression-positive" type="radio" name="impression" checked>
-          <label class="form__label" for="id-impression-positive">Скорее положительное</label>
-        </div>
-        <div class="form__input-block">
-          <input class="form__input-radio" id="id-impression-negative" type="radio" name="impression">
-          <label class="form__label" for="id-impression-negative">Скорее отрицательное</label>
-        </div>
-      </div>
-
-      <div class="form__block">
-        <h2 class="form__block-title">Даты вашей поездки:</h2>
-        <div class="form__input-block">
-          <label class="form__label" for="id-date-arrival">
-            Дата приезда:
-            <span class="form__star-symbol">*</span>
-          </label>
-          <input class="form__input-text" id="id-date-arrival" type="text" name="date-arrival" placeholder="4 июля 2015">
-        </div>
-        <div class="form__input-block">
-          <label class="form__label" for="id-stay-duration">
-            Длительность пребывания:
-            <span class="form__star-symbol">*</span>
-          </label>
-          <div class="form__count-block">
-            <button class="form__input-numerator  form__input-numerator--minus" type="button"></button>
-            <button class="form__input-numerator  form__input-numerator--plus" type="button"></button>
-            <div class="form__input-description">
-              <span class="form__input-description-docket">дн.</span>
-              <input class="form__input-text" id="id-stay-duration" type="text" name="stay-duration" value="14">
-            </div>
+        <div class="form__row  clearfix">
+          <div class="form__input-block">
+            <label class="form__label" for="id-surname">
+              Фамилия:
+              <span class="form__star-symbol">*</span>
+            </label>
+            <input class="form__input-text" id="id-surname" type="text" name="surname" placeholder="Иванов">
+          </div>
+          <div class="form__input-block">
+            <label class="form__label" for="id-name">
+              Имя:
+              <span class="form__star-symbol">*</span>
+            </label>
+            <input class="form__input-text" id="id-name" type="text" name="name" placeholder="Петр">
+          </div>
+          <div class="form__input-block">
+            <label class="form__label" for="id-patronymic">Отчество:</label>
+            <input class="form__input-text" id="id-patronymic" type="text" name="patronymic" placeholder="Александрович">
           </div>
         </div>
-        <div class="form__input-block">
-          <label class="form__label" for="id-date-departure">
-            Дата отъезда:
-            <span class="form__star-symbol">*</span>
-          </label>
-          <output  class="form__output" id="id-date-departure" name="date-departure">28 июля 2015</output>
+      </div>
+
+      <div class="form__block">
+        <div class="form__block-heading">
+          <h2 class="form__block-title">Ваше общее впечатление:</h2>
+        </div>
+        <div class="form__container">
+          <div class="form__input-block">
+            <input class="form__input-radio" id="id-impression-positive" type="radio" name="impression" checked>
+            <label class="form__label" for="id-impression-positive">Скорее положительное</label>
+          </div>
+          <div class="form__input-block">
+            <input class="form__input-radio" id="id-impression-negative" type="radio" name="impression">
+            <label class="form__label" for="id-impression-negative">Скорее отрицательное</label>
+          </div>
         </div>
       </div>
 
       <div class="form__block">
-        <h2 class="form__block-title">Кол-во путешественников:</h2>
-        <div class="form__input-block  form__input-block--mb40">
+        <div class="form__block-heading">
+          <h2 class="form__block-title">Даты вашей поездки:</h2>
+        </div>
+        <div class="form__row  clearfix">
+          <div class="form__input-block">
+            <label class="form__label" for="id-date-arrival">
+              Дата приезда:
+              <span class="form__star-symbol">*</span>
+            </label>
+            <input class="form__input-text" id="id-date-arrival" type="text" name="date-arrival" placeholder="4 июля 2015">
+          </div>
+          <div class="form__input-block">
+            <label class="form__label" for="id-stay-duration">
+              Дней пребывания:
+              <span class="form__star-symbol">*</span>
+            </label>
+            <div class="form__count-block">
+              <button class="form__input-numerator  form__input-numerator--minus" type="button"></button>
+              <button class="form__input-numerator  form__input-numerator--plus" type="button"></button>
+              <div class="form__input-description">
+                <label class="form__input-description-docket" for="id-stay-duration">дн.</label>
+                <input class="form__input-text" id="id-stay-duration" type="text" name="stay-duration" value="14">
+              </div>
+            </div>
+          </div>
+          <div class="form__input-block">
+            <label class="form__label" for="id-date-departure">
+              Дата отъезда:
+              <span class="form__star-symbol">*</span>
+            </label>
+            <output  class="form__output" id="id-date-departure" name="date-departure">28 июля 2015</output>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__block">
+        <div class="form__block-heading">
+          <h2 class="form__block-title">Кол-во путешественников:</h2>
+        </div>
+        <div class="form__input-block  form__input-block--mb40  form__input-block--t-center-d-left">
           <label class="form__label" for="id-travelers-count">
-            Количество путешественников:
+            Кол-во путешественников:
             <span class="form__star-symbol">*</span>
           </label>
           <div class="form__count-block">
             <button class="form__input-numerator  form__input-numerator--minus" type="button"></button>
             <button class="form__input-numerator  form__input-numerator--plus" type="button"></button>
             <div class="form__input-description">
-              <span class="form__input-description-docket">дн.</span>
+              <label class="form__input-description-docket" for="id-travelers-count">чел.</label>
               <input class="form__input-text" id="id-travelers-count" type="text" name="travelers-count" value="14">
             </div>
           </div>
         </div>
-        <div class="form__input-block  clearfix">
+        <div class="form__input-block  form__input-block--mb10  clearfix">
           <div class="form__input-left-column">
             <div class="form__number-title">№</div>
             <div class="form__number-block">1</div>
@@ -181,61 +195,86 @@
       </div>
 
       <div class="form__block">
-        <h2 class="form__block-title">Посещенные достопримечательности:</h2>
-        <div class="form__checkbox-block">
-          <input class="form__input-checkbox" id="id-visited-sight-1" type="checkbox" name="visited-sight-1" checked>
-          <label class="form__label" for="id-visited-sight-1">Мост Дьявола</label>
+        <div class="form__block-heading">
+          <h2 class="form__block-title">Посещенные достопримечательности:</h2>
         </div>
-        <div class="form__checkbox-block">
-          <input class="form__input-checkbox" id="id-visited-sight-2" type="checkbox" name="visited-sight-2">
-          <label class="form__label" for="id-visited-sight-2">Слайд-парк</label>
-        </div>
-        <div class="form__checkbox-block">
-          <input class="form__input-checkbox" id="id-visited-sight-3" type="checkbox" name="visited-sight-3" checked>
-          <label class="form__label" for="id-visited-sight-3">Гора-Колокол</label>
-        </div>
-        <div class="form__checkbox-block">
-          <input class="form__input-checkbox" id="id-visited-sight-4" type="checkbox" name="visited-sight-4" checked>
-          <label class="form__label" for="id-visited-sight-4">Красные скалы</label>
+        <div class="form__container  form__container--desktop-none">
+          <div class="form__checkbox-block">
+            <input class="form__input-checkbox" id="id-visited-sight-1" type="checkbox" name="visited-sight-1" checked>
+            <label class="form__label" for="id-visited-sight-1">Мост Дьявола</label>
+          </div>
+          <div class="form__checkbox-block">
+            <input class="form__input-checkbox" id="id-visited-sight-2" type="checkbox" name="visited-sight-2">
+            <label class="form__label" for="id-visited-sight-2">Слайд-парк</label>
+          </div>
+          <div class="form__checkbox-block">
+            <input class="form__input-checkbox" id="id-visited-sight-3" type="checkbox" name="visited-sight-3" checked>
+            <label class="form__label" for="id-visited-sight-3">Гора-Колокол</label>
+          </div>
+          <div class="form__checkbox-block">
+            <input class="form__input-checkbox" id="id-visited-sight-4" type="checkbox" name="visited-sight-4" checked>
+            <label class="form__label" for="id-visited-sight-4">Красные скалы</label>
+          </div>
         </div>
       </div>
 
       <div class="form__block">
-        <h2 class="form__block-title">Загрузите фотографии:</h2>
-        <button class="button button--gray">Выбрать фотографии</button>
+        <div class="form__block-heading">
+          <h2 class="form__block-title">Загрузите фотографии:</h2>
+        </div>
+        <div class="form__button-container">
+          <button class="button button--gray">Выбрать фотографии</button>
+        </div>
         <div class="form__preview-list">
           <div class="form__preview-item">
+            <a class="form__preview-delete-link" href="#"></a>
             <img class="form__preview-image" src="img/preview-image-1.jpg" height="70" width="70" alt="">
-            <a class="form__preview-delete-link" href="#"></a>
+            <span class="form__preview-item-name">img-686.jpg</span>
           </div>
           <div class="form__preview-item">
+            <a class="form__preview-delete-link" href="#"></a>
             <img class="form__preview-image" src="img/preview-image-2.jpg" height="70" width="70" alt="">
-            <a class="form__preview-delete-link" href="#"></a>
+            <span class="form__preview-item-name">img-687.jpg</span>
           </div>
           <div class="form__preview-item">
+            <a class="form__preview-delete-link" href="#"></a>
             <img class="form__preview-image" src="img/preview-image-3.jpg" height="70" width="70" alt="">
-            <a class="form__preview-delete-link" href="#"></a>
+            <span class="form__preview-item-name">img-688.jpg</span>
           </div>
           <div class="form__preview-item">
+            <a class="form__preview-delete-link" href="#"></a>
             <img class="form__preview-image" src="img/preview-image-4.jpg" height="70" width="70" alt="">
-            <a class="form__preview-delete-link" href="#"></a>
+            <span class="form__preview-item-name">img-689.jpg</span>
           </div>
           <div class="form__preview-item">
+            <a class="form__preview-delete-link" href="#"></a>
             <img class="form__preview-image" src="img/preview-image-5.jpg" height="70" width="70" alt="">
-            <a class="form__preview-delete-link" href="#"></a>
+            <span class="form__preview-item-name">img-690.jpg</span>
           </div>
           <div class="form__preview-item">
+            <a class="form__preview-delete-link" href="#"></a>
             <img class="form__preview-image" src="img/preview-image-6.jpg" height="70" width="70" alt="">
-            <a class="form__preview-delete-link" href="#"></a>
-          </div>
-          <div class="form__preview-item">
-            <img class="form__preview-image" src="img/preview-image-7.jpg" height="70" width="70" alt="">
-            <a class="form__preview-delete-link" href="#"></a>
+            <span class="form__preview-item-name">img-691.jpg</span>
           </div>
         </div>
-        <button class="button">Отправить отзыв</button>
+        <div class="form__button-container  form__button-container--desktop-small">
+          <button class="button">Отправить отзыв</button>
+        </div>
       </div>
     </form>
+    <section class="popup  popup--hidden">
+      <h1 class="popup__title">Что-то пошло не так!</h1>
+      <p class="popup__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button">Ок</button>
+    </section>
+    <section class="popup  popup--middle  popup--hidden">
+      <h1 class="popup__title">Ваш отзыв отправлен!</h1>
+      <p class="popup__content">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+В ближайшее время мы опубликуем его на сайте.</p>
+      <footer class="popup__footer">
+        <button class="button">Закрыть окно</button>
+      </footer>
+    </section>
     <footer class="footer-main  clearfix">
       <div class="footer-main__column">
         <h2 class="footer-main__hash">#visitsedona</h2>
