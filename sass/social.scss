@@ -20,6 +20,9 @@
     &:active {
       background-color: #5496bd;
     }
+    &:active::before {
+      opacity: 0.3;
+    }
     &--twitter::before {
       content: "";
       position: absolute;
@@ -32,9 +35,6 @@
 
       background: url("../img/social-twitter.png") no-repeat;
       transform: translate(-50%, -50%);
-    }
-    &--twitter:active::before {
-      opacity: 0.3;
     }
     &--facebook::before {
       content: "";
@@ -49,9 +49,6 @@
       background: url("../img/social-facebook.png") no-repeat;
       transform: translate(-50%, -50%);
     }
-    &--facebook:active::before {
-      opacity: 0.3;
-    }
     &--youtube::before {
       content: "";
       position: absolute;
@@ -64,9 +61,6 @@
 
       background: url("../img/social-youtube.png") no-repeat;
       transform: translate(-50%, -50%);
-    }
-    &--youtube:active::before {
-      opacity: 0.3;
     }
   }
 }

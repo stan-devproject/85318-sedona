@@ -1,7 +1,16 @@
 .logo {
   position: relative;
-
   min-height: 56px;
+
+  @media(min-width: 768px) {
+    position: absolute;
+    top: 0;
+    width: 138px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+
   &__link {
     position: absolute;
     right: 50%;
