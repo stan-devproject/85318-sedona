@@ -64,16 +64,16 @@
         margin-right: auto;
       }
     }
-    
+
   }
   @media(min-width: 768px) {
     &__row  &__input-block {
       float: left;
-      width: 28%;
-      margin-right: 8%;
+      width: 27%;
+      margin-right: 9%;
 
       &:last-child {
-        margin-right: 0;
+        margin-right: 1%;
       }
     }
   }
@@ -180,6 +180,12 @@
   &__count-block {
     position: relative;
     font-size: 0;
+
+    @media(min-width: 768px) and (max-width: 960px) {
+      width: 175px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__input-numerator {
     position: relative;
@@ -261,6 +267,8 @@
 
     vertical-align: top;
     @media(min-width: 768px) and (max-width: 960px) {
+      margin-left: 61px;
+      margin-right: 61px;
     }
   }
   &__input-description &__input-text {
@@ -320,7 +328,6 @@
     font-size: 0;
     line-height: 0;
   }
-  // 1005 - эксперементально...
   @media(min-width: 768px) and (max-width: 1005px) {
     &__input-right-column  &__input-block {
       width: 32.5%;
@@ -333,8 +340,6 @@
       }
     }
   }
-  // 960 + 17px видимо размер скролла.
-  // Если скролл не учитывать, то ширина сайта будет не по макету, и блоки не помещаться.
   @media(min-width: ё005px) {
     &__input-right-column {
       text-align: center;
