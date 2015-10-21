@@ -5,5 +5,15 @@
 
     background: url("../img/map.png") no-repeat;
     background-size: cover;
+
+    @media(min-width: 480px) and (max-width: 780px) {
+      background: url("../img/map-tablet.png") no-repeat;
+      background-size: cover;
+    }
+
+    @media(min-width: 780px) {
+      background: url("../img/map-desktop.png") no-repeat;
+      background-size: cover;
+    }
   }
 }
