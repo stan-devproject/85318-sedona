@@ -1,5 +1,8 @@
 .footer-main {
   background-color: #ffffff;
+  @media(min-width: 768px) {
+    padding-top: 36px;
+  }
   &--attached {
     background-color: #fefefe;
   }
@@ -7,6 +10,13 @@
     padding: 0 26% 40px 26%;
 
     text-align: center;
+
+    @media(min-width: 768px) {
+      float: left;
+      width: 33.3333333%;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   &__hash {
     margin: 0;
@@ -17,5 +27,9 @@
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+
+    @media(min-width: 768px) {
+      padding-top: 13px;
+    }
   }
 }

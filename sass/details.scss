@@ -1,6 +1,7 @@
 .details {
   font-size: 0;
   line-height: 0;
+  text-align: left;
   &--tac {
     text-align: center;
   }
@@ -22,6 +23,9 @@
     color: #999999;
     text-transform: uppercase;
     font-style: italic;
+    &:last-child {
+      margin-right: 0;
+    }
     &--date::before {
       content: "";
       position: absolute;

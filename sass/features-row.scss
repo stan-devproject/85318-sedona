@@ -1,11 +1,50 @@
 .features-row {
+  font-size: 0;
+  line-height: 0;
+
+  @media(min-width: 768px) {
+
+    &__container {
+      width: calc(100%/1.5);
+    }
+
+    &--with-image-left,
+    &--with-image-right {
+      background-color: $color-primary;
+    }
+
+    &--with-image-left .feature {
+      float: right;
+    }
+
+    &--with-image-left &__container {
+      float: left;
+    }
+
+    &--with-image-right .feature {
+      float: left;
+    }
+
+    &--with-image-right &__container {
+      float: right;
+    }
+  }
+
   &__image {
     display: block;
     width: 100%;
     height: auto;
+    max-height: 256px;
   }
   &--icon-row {
     padding-top: 40px;
     padding-bottom: 35px;
+
+    @media(min-width: 768px) {
+      padding-top: 70px;
+    }
+  }
+  &--gray {
+    background-color: #eeeeee;
   }
 }
