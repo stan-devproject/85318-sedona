@@ -6,10 +6,29 @@ module.exports = function(grunt) {
   var config = {
     pkg: grunt.file.readJSON('package.json'),
 
+    clean: {
+      build: ["build"]
+    },
+
+    copy: {
+      build: {
+        files: [{
+         expand: true,
+         cwd: "source",
+         src: [
+         "img/**",
+         "js/**",
+         "*.html"
+         ],
+         dest: "build"
+         }],
+      },
+    },
+
     sass: {
       style: {
         files: {
-          'css/style.css': 'sass/style.scss'
+          'build/css/style.css': 'source/sass/style.scss'
         }
       }
     },
@@ -21,13 +40,37 @@ module.exports = function(grunt) {
         ]
       },
       style: {
-        src: 'css/*.css'
+        src: 'build/css/*.css'
       }
     },
 
+    cssmin: {
+       options: {
+         keepSpecialComments: 0,
+         report: "gzip"
+       },
+       style: {
+         files: {
+           "build/css/style.min.css": ["build/css/style.css"]
+         }
+       }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+        optimizationLevel: 3
+      },
+      files: [{
+        expand: true,
+        src: ["build/img/**/*.{png,jpg,gif,svg}"]
+        }]
+      }
+     },
+
     watch: {
       style: {
-        files: ['sass/**/*.scss'],
+        files: ['source/sass/**/*.scss'],
         tasks: ['sass', 'postcss'],
         options: {
           spawn: false,
@@ -40,4 +83,13 @@ module.exports = function(grunt) {
   config = require('./.gosha')(grunt, config);
 
   grunt.initConfig(config);
+
+  grunt.registerTask("build", [
+   "clean",
+   "copy",
+   "sass",
+   "postcss",
+   "cssmin",
+   "imagemin"
+   ]);
 };
