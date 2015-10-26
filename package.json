@@ -29,9 +29,14 @@
     "lint": "grunt lintspaces:codestyle",
     "test": "npm run lint",
     "pregosha": "npm install",
-    "gosha": "grunt gosha"
+    "gosha": "grunt gosha",
+    "build": "grunt build"
   },
   "engines": {
     "node": "^0.12.7"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^0.9.4"
   }
 }
