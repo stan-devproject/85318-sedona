@@ -70,8 +70,8 @@ module.exports = function(grunt) {
 
     watch: {
       style: {
-        files: ['source/sass/**/*.scss'],
-        tasks: ['sass', 'postcss'],
+        files: ['source/sass/**/*.scss','source/img/**','source/js/**','source/*.html'],
+        tasks: ['clean','copy','sass', 'postcss'],
         options: {
           spawn: false,
           livereload: true
