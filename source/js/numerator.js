@@ -20,17 +20,23 @@
       return;
     }
 
-    numerator_text.addEventListener("change", function() {
+    numerator_text.addEventListener("change", function(event) {
+      event.preventDefault();
+
       numeratorValueCheck(numerator_text);
     });
 
-    numerator_plus.addEventListener("click", function() {
+    numerator_plus.addEventListener("click", function(event) {
+      event.preventDefault();
+
       if (numeratorValueCheck(numerator_text) && (parseInt(numerator_text.value, 10) != max_value)) {
         numerator_text.value = parseInt(numerator_text.value, 10) + 1;
       }
     });
 
-    numerator_minus.addEventListener("click", function() {
+    numerator_minus.addEventListener("click", function(event) {
+      event.preventDefault();
+
       if (numeratorValueCheck(numerator_text) && (parseInt(numerator_text.value, 10) != min_value)) {
         numerator_text.value = parseInt(numerator_text.value, 10) - 1;
       }

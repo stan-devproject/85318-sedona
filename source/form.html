@@ -34,7 +34,6 @@
         </div>
       </nav>
       <div class="promo  promo--inner-page">
-        <!-- <img class="promo__image  promo__image--small" src="img/promo-middle.png" width="458" height="78" alt=""> -->
         <svg class="promo__svg-text-sedona  promo__svg-text-sedona--small" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="459.755px" height="79.804px" viewBox="0 0 459.755 79.804" enable-background="new 0 0 280 48"
            xml:space="preserve">
@@ -58,7 +57,7 @@
       </div>
     </header>
 
-    <form class="form" action="#" method="post">
+    <form class="form" action="https://echo.htmlacademy.ru/adaptive" method="post">
       <div class="text-intro  text-intro--pb15">
         <h1 class="text-intro__title  text-intro__title--mqmin768fs30">Оставьте свой отзыв</h1>
         <p class="text-intro__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -282,12 +281,12 @@
         </div>
       </div>
     </form>
-    <section class="popup  popup--hidden">
+    <section class="popup  popup--js-error">
       <h1 class="popup__title">Что-то пошло не так!</h1>
       <p class="popup__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button">Ок</button>
     </section>
-    <section class="popup  popup--middle  popup--hidden">
+    <section class="popup  popup--js-success  popup--middle">
       <h1 class="popup__title">Ваш отзыв отправлен!</h1>
       <p class="popup__content">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
 В ближайшее время мы опубликуем его на сайте.</p>
@@ -317,6 +316,7 @@
     </footer>
   </div>
   <script src="js/numerator.js"></script>
+  <script src="js/ajax.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
